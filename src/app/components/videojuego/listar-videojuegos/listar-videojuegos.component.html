@@ -1,1 +1,35 @@
-<p>listar-videojuegos works!</p>
+<div class="container my-5">
+    <h1 class="text-center">Videojuego</h1>
+    <a [routerLink]="['/crearvideojuego']" class="btn btn-success mb-3">Añadir Nuevo Videojuego</a>
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Género</th>
+                <th>Empresa</th>
+                <th>Fecha de Lanzamiento</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (videojuego of videojuegos; track videojuego.id) {
+            <tr>
+                <td>{{videojuego.id}}</td>
+                <td>{{videojuego.nombre}}</td>
+                <td>{{videojuego.genero}}</td>
+                @for (empresa of empresas; track empresa.id) {
+                    @if (empresa.id === videojuego.empresaId) {
+                        <td>{{empresa.nombre}}</td>
+                    }
+                }
+                <td>{{videojuego.fechaLanzamiento}}</td>
+                <td>
+                    <a class="btn btn-danger btn-sm" (click)="eliminarVideojuego(videojuego.id)">Eliminar</a>
+                    <a class="btn btn-info btn-sm" [routerLink]="['/editarvideojuego', videojuego.id]">Editar</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
