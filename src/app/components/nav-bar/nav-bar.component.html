@@ -1,1 +1,12 @@
-<p>nav-bar works!</p>
+<nav class="navbar navbar-light bg-white">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="d-flex gap-3">
+            <a class="btn btn-light" [routerLink]="['/']"><i class="bi bi-plus-circle me-1"></i>
+                Inicio</a>
+                <a class="btn btn-primary" [routerLink]="['/listaempresas']"><i class="bi bi-plus-circle me-1"></i>
+                    Lista Empresas</a>
+                    <a class="btn btn-success" [routerLink]="['/listavideojuegos']"><i class="bi bi-plus-circle me-1"></i>
+                        Lista Videojuegos</a>
+        </div>
+    </div>
+</nav>

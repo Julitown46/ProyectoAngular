@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-nav-bar',
+  selector: 'app-entrada',
   imports: [RouterLink, RouterModule],
-  templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.css'
+  templateUrl: './entrada.component.html',
+  styleUrl: './entrada.component.css'
 })
-export class NavBarComponent {
+export class EntradaComponent {
 
 }
