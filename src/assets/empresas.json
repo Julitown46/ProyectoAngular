@@ -1,0 +1,25 @@
+{
+    "empresas": [
+        {
+            "id": "1",
+            "nombre": "From Software",
+            "latitud": 35.6895,
+            "longitud": 139.6917,
+            "fundacion": "1986-11-01"
+        },
+        {
+            "id": "2",
+            "nombre": "Santa Monica Studio",
+            "latitud": 34.0522,
+            "longitud": -118.2437,
+            "fundacion": "1999-07-15"
+        },
+        {
+            "id": "3",
+            "nombre": "Rockstar Games",
+            "latitud": 40.7128,
+            "longitud": -74.0060,
+            "fundacion": "1998-12-01"
+        }
+    ]
+}
