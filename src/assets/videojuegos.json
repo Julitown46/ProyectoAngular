@@ -1,53 +1,53 @@
 {
-    "videojuegos": [
-        {
-            "id": "1",
-            "nombre": "Dark Souls",
-            "genero": "RPG",
-            "empresaId": "1",
-            "fechaLanzamiento": "2011-09-22"
-        },
-        {
-            "id": "2",
-            "nombre": "Bloodborne",
-            "genero": "Acción",
-            "empresaId": "1",
-            "fechaLanzamiento": "2015-03-24"
-        },
-        {
-            "id": "3",
-            "nombre": "Elden Ring",
-            "genero": "Aventura",
-            "empresaId": "1",
-            "fechaLanzamiento": "2022-02-25"
-        },
-        {
-            "id": "4",
-            "nombre": "God of War",
-            "genero": "Acción",
-            "empresaId": "2",
-            "fechaLanzamiento": "2018-04-20"
-        },
-        {
-            "id": "5",
-            "nombre": "God of War Ragnarok",
-            "genero": "Acción",
-            "empresaId": "2",
-            "fechaLanzamiento": "2022-11-09"
-        },
-        {
-            "id": "6",
-            "nombre": "Grand Theft Auto V",
-            "genero": "Mundo Abierto",
-            "empresaId": "3",
-            "fechaLanzamiento": "2013-09-17"
-        },
-        {
-            "id": "7",
-            "nombre": "Red Dead Redemption 2",
-            "genero": "Aventura",
-            "empresaId": "3",
-            "fechaLanzamiento": "2018-10-26"
-        }
-    ]
+  "videojuegos": [
+    {
+      "id": "1",
+      "nombre": "Dark Souls",
+      "genero": "RPG",
+      "empresaId": "1",
+      "fechaLanzamiento": "2011-09-22"
+    },
+    {
+      "id": "2",
+      "nombre": "Bloodborne",
+      "genero": "Acción",
+      "empresaId": "1",
+      "fechaLanzamiento": "2015-03-24"
+    },
+    {
+      "id": "3",
+      "nombre": "Elden Ring",
+      "genero": "Aventura",
+      "empresaId": "1",
+      "fechaLanzamiento": "2022-02-25"
+    },
+    {
+      "id": "4",
+      "nombre": "God of War",
+      "genero": "Acción",
+      "empresaId": "2",
+      "fechaLanzamiento": "2018-04-20"
+    },
+    {
+      "id": "5",
+      "nombre": "God of War Ragnarok",
+      "genero": "Acción",
+      "empresaId": "2",
+      "fechaLanzamiento": "2022-11-09"
+    },
+    {
+      "id": "6",
+      "nombre": "Grand Theft Auto V",
+      "genero": "Mundo Abierto",
+      "empresaId": "3",
+      "fechaLanzamiento": "2013-09-17"
+    },
+    {
+      "id": "7",
+      "nombre": "Red Dead Redemption 2",
+      "genero": "Aventura",
+      "empresaId": "3",
+      "fechaLanzamiento": "2018-10-26"
+    }
+  ]
 }

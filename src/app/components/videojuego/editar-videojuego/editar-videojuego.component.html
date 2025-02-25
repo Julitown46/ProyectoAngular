@@ -1,1 +1,27 @@
-<p>editar-videojuego works!</p>
+<div class="container my-5">
+    <h1 class="text-center">Nuevo Videojuego</h1>
+    <form [formGroup]="form" (submit)="submit()" id="formVideojuego">
+        <div class="mb-3">
+            <label for="nombreVideojuego" class="form-label">Nombre</label>
+            <input formControlName="nombre" type="text" class="form-control" id="nombreVideojuego" required>
+        </div>
+        <div class="mb-3">
+            <label for="generoVideojuego" class="form-label">Género</label>
+            <input formControlName="genero" type="text" class="form-control" id="generoVideojuego" required>
+        </div>
+        <div class="mb-3">
+            <label for="empresaVideojuego" class="form-label">Empresa</label>
+            <select formControlName="empresa" class="form-select" id="empresaVideojuego">
+                @for (empresa of empresas; track empresa.id) {
+                    <option class="text-dark" [value]="empresa.id">{{empresa.nombre}}</option>
+                }
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="fechaLanzamientoVideojuego" class="form-label">Fecha de Lanzamiento</label>
+            <input formControlName="fecha" type="date" class="form-control" id="fechaLanzamientoVideojuego" required>
+        </div>
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <a [routerLink]="['/listavideojuegos']" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

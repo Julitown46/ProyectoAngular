@@ -23,7 +23,7 @@ export class EmpresaService {
       return this.http.post(this.urlEmpresa, empresa);
     }
 
-    updateEvento(empresa: Empresa){
+    updateEmpresa(empresa: Empresa){
       return this.http.put(`${this.urlEmpresa}/${empresa.id}`, empresa);
     }
 
