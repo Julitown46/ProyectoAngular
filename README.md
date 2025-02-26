@@ -1,59 +1,50 @@
-# ProyectoAngular
+# ProyectoCliente
+Proyecto de la segunda evaluación de Desarrollo Web en Entorno Cliente.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
+## Estructura del Proyecto
+Este proyecto está diseñado para gestionar empresas y videojuegos a través de funcionalidades CRUD (Crear, Leer, Actualizar, Eliminar). A continuación, se detalla la estructura de archivos y carpetas:
 
-## Development server
+### Raíz del proyecto (ProyectoCliente/)
+- `package.json`: Contiene las dependencias y scripts necesarios para el proyecto.
+- `README.md`: Documentación del proyecto.
 
-To start a local development server, run:
+### Carpeta principal del proyecto (`src/`)
+Contiene los archivos y carpetas principales de la aplicación.
 
-```bash
-ng serve
-```
+- `index.html`: Página de inicio que enlaza con las funcionalidades principales (gestión de empresas y videojuegos).
+- `main.js`: Archivo JavaScript principal, donde se define la lógica global de la aplicación.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Subcarpetas en `src/app`
 
-## Code scaffolding
+#### `components/`
+- **`empresa/`**: Funcionalidades relacionadas con empresas
+  - `crear-empresa/`: Componente para la creación de empresas.
+  - `detalle-empresa/`: Componente para ver detalles de una empresa.
+  - `editar-empresa/`: Componente para editar empresas.
+  - `listar-empresas/`: Componente para listar empresas.
+- **`videojuego/`**: Funcionalidades relacionadas con videojuegos
+  - `crear-videojuego/`: Componente para la creación de videojuegos.
+  - `editar-videojuego/`: Componente para editar videojuegos.
+  - `listar-videojuegos/`: Componente para listar videojuegos.
+- **Otros componentes**:
+  - `entrada/`: Componente de entrada principal.
+  - `mapa/`: Componente de visualización de mapa.
+  - `nav-bar/`: Barra de navegación.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+#### `models/`
+Contiene los modelos de datos utilizados en la aplicación.
+- `empresa.ts`: Define la estructura de una empresa.
+- `videojuego.ts`: Define la estructura de un videojuego.
 
-```bash
-ng generate component component-name
-```
+#### `services/`
+Contiene los servicios que gestionan la lógica de negocio y comunicación con la API o almacenamiento de datos.
+- `empresa.service.ts`: Servicio para la gestión de empresas.
+- `empresa.service.spec.ts`: Pruebas unitarias del servicio de empresas.
+- `videojuego.service.ts`: Servicio para la gestión de videojuegos.
+- `videojuego.service.spec.ts`: Pruebas unitarias del servicio de videojuegos.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Cómo navegar por el proyecto
+- **Inicio**: Ejecuta la aplicación Angular para acceder a la página principal.
+- **Empresas**: Usa los componentes dentro de `src/app/components/empresa/` para gestionar empresas.
+- **Videojuegos**: Usa los componentes dentro de `src/app/components/videojuego/` para gestionar videojuegos.
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
