@@ -48,3 +48,9 @@ Contiene los servicios que gestionan la lógica de negocio y comunicación con l
 - **Empresas**: Usa los componentes dentro de `src/app/components/empresa/` para gestionar empresas.
 - **Videojuegos**: Usa los componentes dentro de `src/app/components/videojuego/` para gestionar videojuegos.
 
+## Cómo iniciar por el proyecto
+Cuando lo descargas tienes que seguir estos comandos:
+- `Instalar node_modules`: npm install
+- `Iniciar las bases de datos y el cliente`: npm run start2
+
+Con estos dos comandos, ya se iniciaria todo en el puerto 4200.
