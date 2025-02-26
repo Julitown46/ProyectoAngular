@@ -1,0 +1,25 @@
+<div class="container my-5">
+    <h1 class="text-center">Detalle Empresa</h1>
+    <form [formGroup]="form" id="formEmpresa">
+        <div class="mb-3">
+            <label for="nombreEmpresa" class="form-label">Nombre</label>
+            <input formControlName="nombre" type="text" class="form-control" id="nombreEmpresa" required readonly>
+        </div>
+        <div class="mb-3">
+            <label for="latitud" class="form-label">Latitud</label>
+            <input formControlName="latitud" type="number" class="form-control" id="latitud" required readonly>
+        </div>
+        <div class="mb-3">
+            <label for="longitud" class="form-label">Longitud</label>
+            <input formControlName="longitud" type="number" class="form-control" id="longitud" required readonly>
+        </div>
+        <div class="mb-3">
+            <label for="fundacionEmpresa" class="form-label">Fundación</label>
+            <input formControlName="fechaFundacion" type="date" class="form-control" id="fundacionEmpresa" required
+                readonly>
+        </div>
+        <app-mapa [latitude]="latitud" [longitude]="longitud" [isEditable]="false">
+        </app-mapa>
+        <a [routerLink]="['/listaempresas']" class="btn btn-secondary">Volver</a>
+    </form>
+</div>

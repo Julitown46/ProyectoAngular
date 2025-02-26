@@ -6,6 +6,7 @@ import { EditarEmpresaComponent } from './components/empresa/editar-empresa/edit
 import { ListarVideojuegosComponent } from './components/videojuego/listar-videojuegos/listar-videojuegos.component';
 import { CrearVideojuegoComponent } from './components/videojuego/crear-videojuego/crear-videojuego.component';
 import { EditarVideojuegoComponent } from './components/videojuego/editar-videojuego/editar-videojuego.component';
+import { DetalleEmpresaComponent } from './components/empresa/detalle-empresa/detalle-empresa.component';
 
 export const routes: Routes = [
     { path: '', component: EntradaComponent },
@@ -14,5 +15,6 @@ export const routes: Routes = [
     { path: 'editarempresa/:id', component: EditarEmpresaComponent },
     { path: 'listavideojuegos', component: ListarVideojuegosComponent },
     { path: 'crearvideojuego', component: CrearVideojuegoComponent },
-    { path: 'editarvideojuego/:id', component: EditarVideojuegoComponent }
+    { path: 'editarvideojuego/:id', component: EditarVideojuegoComponent },
+    { path: 'detalleempresa/:id', component: DetalleEmpresaComponent }
 ];

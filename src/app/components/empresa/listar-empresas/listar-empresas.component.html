@@ -20,7 +20,8 @@
                 <td>{{empresa.fundacion}}</td>
                 <td>
                     <a class="btn btn-danger btn-sm" (click)="eliminarEmpresa(empresa.id)">Eliminar</a>
-                    <a class="btn btn-info btn-sm" [routerLink]="['/editarempresa', empresa.id]">Editar</a>
+                    <a class="btn btn-warning btn-sm" [routerLink]="['/editarempresa', empresa.id]">Editar</a>
+                    <a class="btn btn-info btn-sm" [routerLink]="['/detalleempresa', empresa.id]">Detalles</a>
                 </td>
             </tr>
             }

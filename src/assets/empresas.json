@@ -13,8 +13,8 @@
       "id": "2",
       "nombre": "Santa Monica Studio",
       "coordinates": {
-        "latitud": 34.0522,
-        "longitud": -118.2437
+        "latitud": 33.97278,
+        "longitud": -118.42667
       },
       "fundacion": "1999-07-15"
     },
@@ -22,8 +22,8 @@
       "id": "3",
       "nombre": "Rockstar Games",
       "coordinates": {
-        "latitud": 40.7128,
-        "longitud": -74.006
+        "latitud": 40.728888888889,
+        "longitud": -73.99
       },
       "fundacion": "1998-12-01"
     }
